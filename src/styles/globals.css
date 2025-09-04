@@ -1,0 +1,100 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-family-anton: var(--font-anton), sans-serif;
+  --font-family-poppins: var(--font-poppins), sans-serif;
+
+  --text-heading-1: 9.375rem; /* 150px */
+  --text-heading-1--line-height: 1.2;
+
+  --text-heading-2: 7.5rem; /* 120px */
+  --text-heading-2--line-height: 1.1;
+
+  --text-heading-3: 5.25rem; /* 84px */
+  --text-heading-3--line-height: 1;
+
+  --text-heading-4: 3rem; /* 48px */
+  --text-heading-4--line-height: 1.2;
+
+  --text-heading-5: 2rem; /* 32px */
+  --text-heading-5--line-height: 1.2;
+
+  --text-heading-6: 1rem; /* 16px */
+  --text-heading-6--line-height: 1.2;
+
+  --text-text-lg: 1.25rem; /* 20px */
+  --text-text-lg--line-height: 1.4; /* 28px */
+
+  --text-text-md: 1.125rem; /* 18px */
+  --text-text-md--line-height: 1.444; /* 26px */
+
+  --text-text-regular: 1rem; /* 16px */
+  --text-text-regular--line-height: 1.5; /* 24px */
+
+  --text-text-sm: 0.875rem; /* 14px */
+  --text-text-sm--line-height: 1.429; /* 20px */
+
+  --text-text-xs: 0.75rem; /* 12px */
+  --text-text-xs--line-height: 1.333; /* 16px */
+
+  /* Primary */
+  --color-primary-500: #ffba00;
+
+  /* Secondary - Beige/Tan shades */
+  --color-secondary-100: #f2efe6;
+  --color-secondary-300: #d9d1bd;
+  --color-secondary-400: #c9ba97;
+  --color-secondary-500: #b3a281;
+
+  /* Neutral - Gray/Black shades */
+  --color-neutral-100: #ffffff;
+  --color-neutral-200: #eaeaec;
+  --color-neutral-300: #878787;
+  --color-neutral-400: #4d4d4d;
+  --color-neutral-500: #000000;
+
+  /* Danger - Red shades */
+  --color-danger-100: #ff5656;
+  --color-danger-200: #ff2626;
+  --color-danger-300: #fc0808;
+  --color-danger-400: #d90000;
+}
+
+.font-anton {
+  font-family: var(--font-anton), sans-serif;
+}
+
+.font-poppins {
+  font-family: var(--font-poppins), sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+/* Infinite scroll animation */
+@keyframes infinite-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-infinite-scroll {
+  animation: infinite-scroll 60s linear infinite;
+  will-change: transform;
+}
