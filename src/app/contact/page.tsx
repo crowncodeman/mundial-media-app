@@ -1,7 +1,6 @@
 import ContactForm from '@/components/ContactForm'
 import ContactPageHeading from '@/components/ContactPageHeading'
 import ContactSocialLinks from '@/components/ContactSocialLinks'
-import { cn, container } from '@/utils/cn'
 
 const ContactPage = () => {
   return (
